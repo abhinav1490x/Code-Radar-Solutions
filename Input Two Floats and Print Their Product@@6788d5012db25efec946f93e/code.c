@@ -2,5 +2,5 @@
 int main(){
     float a,b;
     scanf("%f",&a,&b);
-    printf("Product: ");
+    printf("Product: ",a*b);
 }

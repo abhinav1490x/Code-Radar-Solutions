@@ -1,4 +1,4 @@
-#include<sdtio.h>
+#include<stdio.h>
 int main (){
     int n1,n2,result;
     scanf("%d %d",&n1,&n2);

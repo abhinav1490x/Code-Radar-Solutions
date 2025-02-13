@@ -5,7 +5,6 @@ int main(){
     if(n&1){
         printf("Set");
     }
-
     else{
         printf("Not Set");
     }

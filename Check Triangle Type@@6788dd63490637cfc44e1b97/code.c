@@ -9,7 +9,8 @@ int main(){
         printf("Isoceles");
     }
     else{
-        printf("Scalene")
+        printf("Scalene");
     }
+    return 0;
 
 }

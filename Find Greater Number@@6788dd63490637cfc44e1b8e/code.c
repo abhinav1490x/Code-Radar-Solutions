@@ -8,4 +8,5 @@ int main(){
     else{
         printf("%d\n",n2);
     }
+    return 0;
 }

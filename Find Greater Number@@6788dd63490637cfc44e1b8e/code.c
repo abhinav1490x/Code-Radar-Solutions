@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main(){
-    int a,b;
-    scanf("%a %b",&a,&b);
-    if(a>b){
-        printf("%d\n",a);
+    int n1,n2;
+    scanf("%a %b",&n1,&n2);
+    if(n1>n2){
+        printf("%d\n",n1);
     }
     else{
-        printf("%d\n",b);
+        printf("%d\n",n2);
     }
 }

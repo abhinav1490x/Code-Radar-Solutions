@@ -9,5 +9,3 @@
             printf("Not Divisible");
         }
     }
-
-}

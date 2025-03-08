@@ -6,6 +6,6 @@ int main(){
         printf("0");
         return 0;
     }
-    printf("%d"\n",__builtin_ctz(num));
+    printf("%d\n",__builtin_ctz(num));
     return 0;
 }

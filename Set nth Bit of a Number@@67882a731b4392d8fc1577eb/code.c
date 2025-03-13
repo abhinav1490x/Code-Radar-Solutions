@@ -1,10 +1,24 @@
-def set_nth_bit(number, n):
-    # Set the nth bit of 'number' to 1
-    return number | (1 << n)
+#include <stdio.h>
 
-# Example usage:
-number = 10  # Binary: 1010
-n = 2  # Position to set the bit
-result = set_nth_bit(number, n)
-print(f"Original number: {number} (binary: {bin(number)})")
-print(f"Number after setting {n}th bit: {result} (binary: {bin(result)})")
+int setNthBit(int number, int n) {
+ 
+    return number | (1 << n);
+}
+
+int main() {
+    int number, n;
+    
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    printf("Enter the position of the bit to set (0-based index): ");
+    scanf("%d", &n);
+
+    int result = setNthBit(number, n);
+
+    printf("Original number: %d (binary: %x)\n", number, number);
+    printf("Number after setting the %d-th bit: %d (binary: %x)\n", n, result, result);
+
+    return 0;
+}

@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main(){
     int n;
-    int nsp;
+    
+    int nsp=n-1;
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
         for(int q=1;q<=nsp;q++){
             printf(" ");
         }
+        nsp--;
         for(int j=1;n<=i;j++){
             printf("%d",j);
         }

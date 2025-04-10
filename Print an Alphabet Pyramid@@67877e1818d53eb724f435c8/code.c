@@ -7,10 +7,7 @@ int main() {
     // Loop through each row
     for (int i = 1; i <= n; i++) {
         // Print spaces before the alphabets to align the pyramid
-        for (int j = 1; j <= n - i; j++) {
-            printf(" ");
-        }
-
+      
         // Print the alphabets with spaces between them
         for (int j = 1; j <= i; j++) {
             if (j > 1) {

@@ -1,21 +1,27 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    
-    int nsp=n-1;
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        for(int q=1;q<=nsp;q++){
+    scanf("%d", &n);  // Input the number of rows
+
+    // Loop through each row
+    for (int i = 1; i <= n; i++) {
+        // Print spaces before the numbers to align the pyramid
+        for (int j = 1; j <= n - i; j++) {
             printf(" ");
         }
-        nsp--;
-        for(int j=1;n<=i;j++){
-            printf("%d",j);
+
+        // Print the numbers with spaces between them
+        for (int j = 1; j <= i; j++) {
+            if (j > 1) {
+                printf(" ");  // Space between numbers
+            }
+            printf("%d", j);
         }
-        for(int k=1;k<(2*i+1);k++){
-            printf("%d ",i);
-        }   
+
+        // Move to the next line after each row
         printf("\n");
-    
-}
+    }
+
+    return 0;
 }

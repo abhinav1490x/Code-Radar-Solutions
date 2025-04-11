@@ -13,7 +13,7 @@ int main() {
     }
 
     // Output the result
-    printf(n, sum);
+    printf("%d", sum);
 
     return 0;
 }
